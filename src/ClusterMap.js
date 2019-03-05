@@ -17,11 +17,11 @@ class MapWidget extends Component {
 
 
   render() {
-
+    const ctr = [45.6, -122.6];
     const pins = this.state.pins
     return (
       <LeafletMap
-        center={[50, 10]}
+        center={ctr}
         zoom={6}
         maxZoom={10}
         attributionControl={true}

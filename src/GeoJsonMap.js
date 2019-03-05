@@ -4,9 +4,10 @@ import worldGeoJSON from 'geojson-world-map';
 
 class GeoJsonMap extends React.Component {
   render() {
+    const ctr = [45.6, -122.6];
     return (
       <LeafletMap
-        center={[50, 10]}
+        center={ctr}
         zoom={6}
         maxZoom={10}
         attributionControl={true}
